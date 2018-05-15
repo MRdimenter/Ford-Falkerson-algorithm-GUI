@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="359.0" prefWidth="505.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="163.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Инструкция " textAlignment="CENTER" wrappingWidth="179.13671875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="57.0" layoutY="67.0" prefHeight="200.0" prefWidth="392.0" text="(1) В текстовом поле напишите или загрузите с файла &#10;     граф, в виде двумерного массива. &#10;(2) Напишите число вершин для вашего графа.&#10;(3) Заполните поле &quot;Исток сети&quot;. &#10;(4) Заполните поле &quot;Сток сети&quot;. &#10;(5) Нажмите кнопку &quot;Go&quot;. &#10;&#10;Так же, вы можете сохранить результат нажав кнопку&#10;&quot;Save file&quot;. &#10;&#10;" />
+      <Text fill="#085a8d" layoutX="163.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дмитрий Гальцев 2018г" textAlignment="CENTER" wrappingWidth="179.13671875">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
