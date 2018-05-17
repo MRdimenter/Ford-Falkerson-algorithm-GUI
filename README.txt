@@ -1,3 +1,2 @@
---GUI программа для алгоритма Флорда-Фалкерсона--
-Технологии: 
-JAVAFX  
+Algorithm of Ford Falkerson with javaFX 
+

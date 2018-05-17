@@ -1,6 +1,6 @@
 package sample;
 
-import Algoritms.*;
+import Algoritms.MaxFlow;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +11,6 @@ import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
 public class Controller {
@@ -70,7 +69,6 @@ public class Controller {
     }
 
 
-    /** Action */
     /**
      * Один метод для отслеживания нажатия всех кнопок
      */
@@ -95,11 +93,9 @@ public class Controller {
 
                 try {
                     getOutputText.setText("Output: " + String.valueOf(maxFlow.GETfordFalcerson((Integer) spinnerCout.getValue(), textArea.getText(), netINPUT.getText(), netOUTPUT.getText())));
-                }
-                catch (NumberFormatException e) {
+                } catch (NumberFormatException e) {
                     getOutputText.setText("Output: Некоректный ввод данных");
-                }
-                catch (ArrayIndexOutOfBoundsException e){
+                } catch (ArrayIndexOutOfBoundsException e) {
                     getOutputText.setText("Output: Выход за пределы массива");
                 }
                 break;
@@ -122,60 +118,11 @@ public class Controller {
                     stage.initModality(Modality.WINDOW_MODAL);
                     stage.initOwner(((Node) actionEvent.getSource()).getScene().getWindow());
                     stage.show();
-                }
-                catch (IOException e) {
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
                 break;
-                }
-
+            }
         }
     }
 }
-
-
-/**
- * Изменение цвета для дарк темы
- * Vbox.setBackground(new Background(new BackgroundFill(Color.BLACK,
- * null, null)));
- * <p>
- * <p>
- * for (int i = 0; i < array.length; i++) { //проходим по всей строке
- * <p>
- * for (int j = 0; j < array.length; j++) {
- * if(Character.digit(txt.charAt(wap), 10) == -1) {
- * j--;
- * wap++;
- * }
- * else  {
- * <p>
- * array[i][j] = Character.digit(txt.charAt(wap), 10);
- * wap++;
- * System.out.println("array [" + i + "]" + "[" + j + "] : " + array[i][j]);
- * }
- * <p>
- * }
- * <p>
- * }
- */
-
-
-/**
- for (int i = 0; i < array.length; i++) { //проходим по всей строке
-
- for (int j = 0; j < array.length; j++) {
- if(Character.digit(txt.charAt(wap), 10) == -1) {
- j--;
- wap++;
- }
- else  {
-
- array[i][j] = Character.digit(txt.charAt(wap), 10);
- wap++;
- System.out.println("array [" + i + "]" + "[" + j + "] : " + array[i][j]);
- }
-
- }
-
- }
- */

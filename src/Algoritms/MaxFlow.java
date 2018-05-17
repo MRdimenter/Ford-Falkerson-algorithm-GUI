@@ -1,7 +1,6 @@
-package Algoritms;// Java-программа для реализации алгоритма Форда Фулкерсона
+package Algoritms;
 
 import javafx.stage.FileChooser;
-
 import sample.Main;
 
 import java.io.*;
@@ -19,18 +18,6 @@ public class MaxFlow {
     private String text = "";
     private int outputFalcerson;
 
-    /**
-     * Setter
-     * public void setV(int v) {
-     * V = v;
-     * }
-     * public void setNetINPUT(String netINPUT) {
-     * this.netINPUT = Integer.parseInt(netINPUT); //из стринга в инт
-     * }
-     * public void setNetOUTPUT(String netOUTPUT) {
-     * this.netOUTPUT = Integer.parseInt(netOUTPUT);
-     * }
-     */
 
     public int GETfordFalcerson(int getValue, String getText, String netInput, String netOutput) {
         V = getValue;
@@ -154,8 +141,6 @@ public class MaxFlow {
     }
 
 
-
-
     /**
      * Getter
      */
@@ -184,7 +169,7 @@ public class MaxFlow {
             InputStream output = new FileInputStream(selectedFile);  //чтение информации из файла
             for (int i = 0; i < selectedFile.length(); i++)
                 text += (char) output.read();
-        }  catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             e.getMessage();
         } catch (IOException e) {
             e.printStackTrace();
@@ -194,7 +179,9 @@ public class MaxFlow {
         return text;
     }
 
-    /**Сохранение файла */
+    /**
+     * Сохранение файла
+     */
     public void saveFiletxt() {
 
         FileChooser fileChooser = new FileChooser();
@@ -206,13 +193,13 @@ public class MaxFlow {
         //Show save file dialog
         File file = fileChooser.showSaveDialog(main.primarySTAGE);
 
-        if(file != null){
+        if (file != null) {
             SaveFile(text, file);
 
         }
     }
 
-    private void SaveFile(String content, File file){
+    private void SaveFile(String content, File file) {
         try {
             FileWriter fileWriter = null;
 
@@ -228,11 +215,3 @@ public class MaxFlow {
 }
 
 
-/**
- * 0 16 13 0 0 0
- * 0 0 10 12 0 0
- * 0 4 0 0 14 0
- * 0 0 9 0 0 20
- * 0 0 0 7 0 4
- * 0 0 0 0 0 0
- */
