@@ -1,2 +1,2 @@
-Algorithm of Ford Falkerson with javaFX 
+Algorithm of Ford Fulkerson with javaFX 
 
