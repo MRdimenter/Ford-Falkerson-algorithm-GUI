@@ -19,5 +19,5 @@ Algorithm of Ford Falkerson with javaFX
 **0 0 0 7 0 4** <br/> 
 **0 0 0 0 0 0** <br/> 
 <br/> 
-**Output: 23** 
+**Output: 230** 
 
