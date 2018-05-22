@@ -8,6 +8,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -113,6 +114,7 @@ public class Controller {
                     stage.setTitle("Как это работает?!");
                     stage.setMinHeight(359);
                     stage.setMinWidth(505);
+                    stage.getIcons().add(new Image("Icon/icon.png"));
                     stage.setResizable(false); //нельзя растягивать окно
                     stage.setScene(new Scene(root));
                     stage.initModality(Modality.WINDOW_MODAL);
